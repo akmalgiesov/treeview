@@ -1,0 +1,27 @@
+body{
+  font-size: 16px;
+}
+
+
+.category:not(.product){
+  font-size: 1.5rem;
+  color:green;
+}
+
+.product{
+  font-size: 1rem;
+  margin: 10px 30px;
+  color:black;
+
+}
+
+.expandable{
+  display: none;
+  background-color: #f8f8f8;
+  width:300px;
+  padding: 5px 25px;
+}
+
+.category:hover{
+  cursor: pointer;
+}

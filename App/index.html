@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+
+      <?php
+
+      foreach($data as $catalog){
+        if($category != $catalog['id']){
+          $category = $catalog['id'];
+          echo '<ul><a class="category" href="#">'.$catalog['category'].'</a><div class="expandable">';
+            foreach ($data as $product){
+              if($category == $product['id_category']){
+                echo '<li class="product">'.$product['product'].'</li>';
+              }
+            }
+          echo '</div></ul>';
+        }
+      }
+
+
+      ?>
+
+    </body>
+      <script src="assets/js/script.js"></script>
+</html>

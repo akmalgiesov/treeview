@@ -1,0 +1,16 @@
+{
+    "name": "user-pc/tree",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Akmal Giesov",
+            "email": "akmalgiesov1993@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+    "psr-4":{
+      "App\\" : "App/"
+    }
+  }
+}
